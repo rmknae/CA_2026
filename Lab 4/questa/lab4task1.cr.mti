@@ -1,0 +1,67 @@
+{C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/imm_gen.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/imm_gen.sv}
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module imm_gen
+
+Top level modules:
+	imm_gen
+
+} {} {}} {C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/pg_reg.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/pg_reg.sv}
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module pc_reg
+
+Top level modules:
+	pc_reg
+
+} {} {}} {C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/ASYNC_RAM_1W2R.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/ASYNC_RAM_1W2R.sv}
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module ASYNC_RAM_1W2R
+
+Top level modules:
+	ASYNC_RAM_1W2R
+
+} {} {}} {C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/alu_controller.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/alu_controller.sv}
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module alu_controller
+
+Top level modules:
+	alu_controller
+
+} {} {}} {C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/riscv_cpu.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/riscv_cpu.sv}
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module riscv_cpu
+
+Top level modules:
+	riscv_cpu
+
+} {} {}} {C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/first_level_controller.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/first_level_controller.sv}
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module first_level_controller
+
+Top level modules:
+	first_level_controller
+
+} {} {}} {C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/instruction_memory.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/instruction_memory.sv}
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module instruction_memory
+
+Top level modules:
+	instruction_memory
+
+} {} {}} {C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/alu.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/alu.sv}
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} {C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/riscv_cpu_tb.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/riscv_cpu_tb.sv}
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module riscv_cpu_tb
+
+Top level modules:
+	riscv_cpu_tb
+
+} {} {}} {C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/opcode.vh} {1 {vlog -work work -vopt -stats=none {C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/opcode.vh}
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+
+} {} {}}

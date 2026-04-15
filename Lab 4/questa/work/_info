@@ -1,0 +1,260 @@
+m255
+K4
+z2
+Z0 !s12c _opt
+Z1 !s99 nomlopt
+R0
+R1
+R0
+R1
+R0
+R1
+R0
+R1
+!s11f vlog 2024.1 2024.02, Feb  1 2024
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/Users/HP/Desktop/Lab2/controlles
+T_opt
+!s110 1774508160
+V`jFBXZLGZz7dA9l0X`J?g0
+04 12 4 work riscv_cpu_tb fast 0
+=1-3024a9946028-69c4d87f-320-26f0
+R1
+!s12f OEM100
+!s12b OEM100
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z2 tCvgOpt 0
+n@_opt
+OL;O;2024.1;79
+valu
+2C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/alu.sv
+Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z4 !s110 1774508154
+!i10b 1
+!s100 3n:X=Bz4FlP8nOXJOGOf02
+IZjYm7?ecWWczaS1[]M2W53
+S1
+Z5 dC:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa
+w1774506397
+8C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/alu.sv
+FC:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/alu.sv
+!i122 49
+L0 8 28
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2024.1;79
+r1
+!s85 0
+31
+Z8 !s108 1774508154.000000
+!s107 C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/alu.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/alu.sv|
+!i113 0
+Z9 o-work work -sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+valu_controller
+2C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/alu_controller.sv
+R3
+R4
+!i10b 1
+!s100 @mEKV1WQ`c06@^A>5^BSS2
+IK5f=N8nLTajoN>H11Mc4n1
+S1
+R5
+w1774507524
+8C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/alu_controller.sv
+FC:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/alu_controller.sv
+!i122 50
+L0 7 44
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/alu_controller.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/alu_controller.sv|
+!i113 0
+R9
+R2
+vASYNC_RAM_1W2R
+2C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/ASYNC_RAM_1W2R.sv
+R3
+R4
+!i10b 1
+!s100 jL8?SCCQ0]zU[ADIQdPBA3
+Ia7hhfK:R@6>DLFa4W^meA0
+S1
+R5
+w1774506395
+8C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/ASYNC_RAM_1W2R.sv
+FC:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/ASYNC_RAM_1W2R.sv
+!i122 51
+L0 2 44
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/ASYNC_RAM_1W2R.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/ASYNC_RAM_1W2R.sv|
+!i113 0
+R9
+R2
+n@a@s@y@n@c_@r@a@m_1@w2@r
+vfirst_level_controller
+2C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/first_level_controller.sv
+R3
+R4
+!i10b 1
+!s100 I>RQ^Dg2<400CCHNcl^XD2
+IkDPH>5?0k8[47bnf:8b=T0
+S1
+R5
+w1774507539
+8C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/first_level_controller.sv
+FC:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/first_level_controller.sv
+!i122 52
+L0 9 69
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 opcode.vh|C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/first_level_controller.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/first_level_controller.sv|
+!i113 0
+R9
+R2
+vimm_gen
+2C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/imm_gen.sv
+R3
+Z10 !s110 1774508155
+!i10b 1
+!s100 5eGaPbB@;dlT9]5Q^JbLf1
+I1I<X;UZe^Vb=A>dfYJafF0
+S1
+R5
+w1773454669
+8C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/imm_gen.sv
+FC:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/imm_gen.sv
+!i122 57
+L0 7 51
+R6
+R7
+r1
+!s85 0
+31
+!s108 1774508155.000000
+!s107 opcode.vh|C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/imm_gen.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/imm_gen.sv|
+!i113 0
+R9
+R2
+vinstruction_memory
+2C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/instruction_memory.sv
+R3
+R4
+!i10b 1
+!s100 dnLmL:19cDiAD1U=bfnBK0
+IGUT9^ANA_oo;k^[48n9F52
+S1
+R5
+w1774506385
+8C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/instruction_memory.sv
+FC:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/instruction_memory.sv
+!i122 53
+L0 7 18
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/instruction_memory.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/instruction_memory.sv|
+!i113 0
+R9
+R2
+vpc_reg
+2C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/pg_reg.sv
+R3
+R4
+!i10b 1
+!s100 i]DMi_2SBeb37L3mTaG?D3
+I^T]_deV02`@^G>kXfnLk50
+S1
+R5
+w1774506391
+8C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/pg_reg.sv
+FC:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/pg_reg.sv
+!i122 54
+L0 7 16
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/pg_reg.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/pg_reg.sv|
+!i113 0
+R9
+R2
+vriscv_cpu
+2C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/riscv_cpu.sv
+R3
+R4
+!i10b 1
+!s100 Tn^S[@X6>?K22PBR@SL@Q3
+ISRBH>C;[`e0H`Q;Z;H9Nm3
+S1
+R5
+w1774507729
+8C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/riscv_cpu.sv
+FC:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/riscv_cpu.sv
+!i122 55
+L0 9 105
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 opcode.vh|C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/riscv_cpu.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/riscv_cpu.sv|
+!i113 0
+R9
+R2
+vriscv_cpu_tb
+2C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/riscv_cpu_tb.sv
+R3
+R10
+!i10b 1
+!s100 iA4`ZlgGM04?XK0BcZfnR3
+IoSDPUQ1NZN4:][0Y@lL<o1
+S1
+R5
+w1774508139
+8C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/riscv_cpu_tb.sv
+FC:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/riscv_cpu_tb.sv
+!i122 56
+L0 9 68
+R6
+R7
+r1
+!s85 0
+31
+R8
+!s107 C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/riscv_cpu_tb.sv|
+!s90 -reportprogress|300|-work|work|-vopt|-sv|-stats=none|C:/Users/HP/Desktop/lab-submissions-rmknae/CA_Group_5/Lab 4/questa/riscv_cpu_tb.sv|
+!i113 0
+R9
+R2
