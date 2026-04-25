@@ -1,0 +1,13 @@
+00a00093 // addi x1, x0, 10    (x1 = 10)
+00a00113 // addi x2, x0, 10    (x2 = 10)
+00208663 // beq  x1, x2, 12    (If 10 == 10, jump forward 3 instructions to PC+12)
+00100193 // addi x3, x0, 1     (Should be SKIPPED)
+00100213 // addi x4, x0, 1     (Should be SKIPPED)
+01f00293 // addi x5, x0, 31    (x5 = 31 - Target of BEQ)
+00000313 // addi x6, x0, 0     (x6 = 0)
+00601463 // bne  x0, x6, 8     (If 0 != 0, jump. Result: No jump, continue to next)
+02a00313 // addi x6, x0, 42    (x6 = 42 - Executes because BNE failed)
+123453b7 // lui  x7, 0x12345   (x7 = 0x12345000) - Test U-type
+008004ef // jal  x9, 8         (Jump forward 2 instructions, x9 = PC+4) - Test J-type
+00100413 // addi x8, x0, 1     (Should be SKIPPED)
+00100a13 // addi x20, x0, 1    (Set x20 = 1 to signal DONE)
