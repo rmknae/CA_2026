@@ -1,3 +1,0 @@
-BEGIN 1:ASYNC_RAM_1W2R:fast:work
-    mem :  1:riscv_cpu_tb:fast:work
-END 

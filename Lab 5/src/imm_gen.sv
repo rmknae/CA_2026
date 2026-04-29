@@ -1,56 +1,59 @@
-// ============================================================
-// imm_gen.sv
-// ============================================================
-
+/*
+ * imm_gen.sv
+ * Immediate Generator for RISC-V Single-Cycle Processor
+ *
+ * Extracts and sign-extends immediates for all instruction formats:
+ *   I-type : inst[31:20] sign-extended to 32 bits
+ *   S-type : {inst[31:25], inst[11:7]} sign-extended to 32 bits
+ *   B-type : {inst[31], inst[7], inst[30:25], inst[11:8], 1'b0} sign-extended
+ *   U-type : {inst[31:12], 12'b0} (LUI / AUIPC)
+ *   J-type : {inst[31], inst[19:12], inst[20], inst[30:21], 1'b0} sign-extended
+ *
+ * Opcode is used to determine the instruction format.
+ */
 `include "opcode.vh"
 
-module imm_gen (
+module imm_gen
+(
     input  logic [31:0] instruction,
     output logic [31:0] immediate
 );
 
-
-    logic [6:0] opcode;
-    assign opcode = instruction[6:0];
+    wire [6:0] opcode = instruction[6:0];
 
     always_comb begin
-        // Default to 0 to avoid creating latches
-        immediate = 32'b0;
-
         case (opcode)
-
+            // I-type: arithmetic, load, jalr
             `OPC_ARI_ITYPE,
             `OPC_LOAD,
-            `OPC_JALR: begin
-                immediate = { {20{instruction[31]}}, instruction[31:20] };   
-            end
+            `OPC_JALR    : immediate = {{20{instruction[31]}}, instruction[31:20]};
 
-           
-            `OPC_STORE: begin
-                immediate = { {20{instruction[31]}}, instruction[31:25], instruction[11:7] };
-            end
+            // S-type: store
+            `OPC_STORE   : immediate = {{20{instruction[31]}},
+                                         instruction[31:25],
+                                         instruction[11:7]};
 
-          
-            `OPC_BRANCH: begin
-                immediate = { {19{instruction[31]}}, instruction[31], instruction[7], instruction[30:25], instruction[11:8], 1'b0 };
-            end
+            // B-type: branch
+            `OPC_BRANCH  : immediate = {{19{instruction[31]}},
+                                         instruction[31],
+                                         instruction[7],
+                                         instruction[30:25],
+                                         instruction[11:8],
+                                         1'b0};
 
-           
+            // U-type: LUI, AUIPC
             `OPC_LUI,
-            `OPC_AUIPC: begin
-                immediate = { instruction[31:12], 12'b0 };
-            end
+            `OPC_AUIPC   : immediate = {instruction[31:12], 12'b0};
 
-           
-            `OPC_JAL: begin
-                immediate = { {11{instruction[31]}}, instruction[31], instruction[19:12], instruction[20], instruction[30:21], 1'b0 };
-            end
+            // J-type: JAL
+            `OPC_JAL     : immediate = {{11{instruction[31]}},
+                                         instruction[31],
+                                         instruction[19:12],
+                                         instruction[20],
+                                         instruction[30:21],
+                                         1'b0};
 
-            // Default for R-Type or unknowns
-            default: begin
-                immediate = 32'b0;
-            end
-
+            default       : immediate = 32'b0;
         endcase
     end
 

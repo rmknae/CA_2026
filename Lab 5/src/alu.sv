@@ -1,35 +1,64 @@
-// ============================================================
-// alu.sv
-// ALU Module for EE-475L Lab 2
-// Supports 10 operations: AND, OR, ADD, XOR, SLL, SRL, SUB, SLT, SRA, SLTU
-// ============================================================
+/*
+ * alu.sv
+ * Arithmetic Logic Unit for RISC-V Single-Cycle Processor
+ *
+ * alu_operation encoding (4-bit):
+ *   0000 : AND
+ *   0001 : OR
+ *   0010 : ADD
+ *   0011 : XOR
+ *   0100 : SLL  (shift left logical)
+ *   0101 : SRL  (shift right logical)
+ *   0110 : SUB
+ *   0111 : SRA  (shift right arithmetic)
+ *   1000 : SLT  (set less than, signed)
+ *   1001 : SLTU (set less than, unsigned)
+ *   1010 : LUI_PASS (pass operand2 directly, used for LUI/AUIPC)
+ *
+ * zero flag: asserted when result == 0 (used for branch comparisons)
+ */
+`include "opcode.vh"
 
-
-module alu(
-    input  logic [31:0] operand1,      // First operand
-    input  logic [31:0] operand2,      // Second operand
-    input  logic [3:0]  alu_operation, // Operation code
-    output logic [31:0] result,        // ALU result
-    output logic        zero           // Zero flag
+module alu
+(
+    input  logic [31:0] operand1,
+    input  logic [31:0] operand2,
+    input  logic [3:0]  alu_operation,
+    output logic [31:0] result,
+    output logic        zero
 );
+
+    // ALU operation encoding
+    localparam ALU_AND  = 4'b0000;
+    localparam ALU_OR   = 4'b0001;
+    localparam ALU_ADD  = 4'b0010;
+    localparam ALU_XOR  = 4'b0011;
+    localparam ALU_SLL  = 4'b0100;
+    localparam ALU_SRL  = 4'b0101;
+    localparam ALU_SUB  = 4'b0110;
+    localparam ALU_SRA  = 4'b0111;
+    localparam ALU_SLT  = 4'b1000;
+    localparam ALU_SLTU = 4'b1001;
+    localparam ALU_PASS = 4'b1010;  // Pass operand2 (for LUI)
 
     always_comb begin
         case (alu_operation)
-            4'b0000: result = operand1 & operand2;                     // AND
-            4'b0001: result = operand1 | operand2;                     // OR
-            4'b0010: result = operand1 + operand2;                     // ADD
-            4'b0011: result = operand1 ^ operand2;                     // XOR
-            4'b0100: result = operand1 << operand2[4:0];               // SLL
-            4'b0101: result = operand1 >> operand2[4:0];               // SRL (logical)
-            4'b0110: result = operand1 - operand2;                     // SUB
-            4'b0111: result = ($signed(operand1) < $signed(operand2)) ? 32'd1 : 32'd0; // SLT signed
-            4'b1000: result = $signed(operand1) >>> operand2[4:0];     // SRA (arithmetic)
-            4'b1001: result = (operand1 < operand2) ? 32'd1 : 32'd0;   // SLTU unsigned
-            default: result = 32'd0;
+            ALU_AND  : result = operand1 & operand2;
+            ALU_OR   : result = operand1 | operand2;
+            ALU_ADD  : result = operand1 + operand2;
+            ALU_XOR  : result = operand1 ^ operand2;
+            ALU_SLL  : result = operand1 << operand2[4:0];
+            ALU_SRL  : result = operand1 >> operand2[4:0];
+            ALU_SUB  : result = operand1 - operand2;
+            ALU_SRA  : result = $signed(operand1) >>> operand2[4:0];
+            ALU_SLT  : result = ($signed(operand1) < $signed(operand2)) ? 32'd1 : 32'd0;
+            ALU_SLTU : result = (operand1 < operand2) ? 32'd1 : 32'd0;
+            ALU_PASS : result = operand2;
+            default  : result = 32'b0;
         endcase
-
-        // Set zero flag: 1 if result is zero, else 0
-        zero = (result == 32'd0) ? 1'b1 : 1'b0;
     end
+
+    // Zero flag: used for branch instructions (result == 0 means equal for BEQ)
+    assign zero = (result == 32'b0);
 
 endmodule
