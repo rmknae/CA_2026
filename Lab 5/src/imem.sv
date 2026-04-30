@@ -1,10 +1,5 @@
 /*
  * imem.sv
- * Instruction Memory for RISC-V Single-Cycle Processor
- * - Word-addressed (each entry is 32 bits)
- * - Asynchronous read
- * - PC is byte-addressed; we shift right by 2 to get word index
- * - Base address: 0x1000_0000
  */
 
 module imem
@@ -19,18 +14,17 @@ module imem
 
     reg [31:0] memory [0:DEPTH-1];
 
+    logic [AWIDTH-1:0] word_addr;
+
     integer i;
     initial begin
         for (i = 0; i < DEPTH; i = i + 1)
             memory[i] = 32'b0;
     end
 
-    // PC is byte-addressed; instruction memory is word-addressed
-    // Testbench uses IMEM_PATH.memory[INST_ADDR] where INST_ADDR is a word index
-    // PC = 0x1000_0000 corresponds to word index 0
-    // Word index = (PC - 0x1000_0000) >> 2
-   wire [AWIDTH-1:0] word_addr = pc >> 2;
-
-    assign instruction = memory[word_addr];
+    always_comb begin
+        word_addr  = pc >> 2;
+        instruction = memory[word_addr];
+    end
 
 endmodule

@@ -918,7 +918,7 @@ Resolution = ns
 UserTimeUnit = default
 
 ; Default run length
-RunLength = 100
+RunLength = 10 ms
 
 ; Maximum iterations that can be run without advancing simulation time
 IterationLimit = 10000000

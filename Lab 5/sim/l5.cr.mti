@@ -1,0 +1,83 @@
+{C:/Users/ramee/Documents/CA_2026/Lab 5/src/opcode.vh} {1 {vlog -work work -vopt -stats=none {C:/Users/ramee/Documents/CA_2026/Lab 5/src/opcode.vh}
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+
+} {} {}} {C:/Users/ramee/Documents/CA_2026/Lab 5/src/imem.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/ramee/Documents/CA_2026/Lab 5/src/imem.sv}
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module imem
+
+Top level modules:
+	imem
+
+} {} {}} {C:/Users/ramee/Documents/CA_2026/Lab 5/src/main_controller.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/ramee/Documents/CA_2026/Lab 5/src/main_controller.sv}
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module main_controller
+
+Top level modules:
+	main_controller
+
+} {} {}} {C:/Users/ramee/Documents/CA_2026/Lab 5/sim/mem_path.vh} {1 {vlog -work work -vopt -stats=none {C:/Users/ramee/Documents/CA_2026/Lab 5/sim/mem_path.vh}
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+
+} {} {}} {C:/Users/ramee/Documents/CA_2026/Lab 5/src/alu.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/ramee/Documents/CA_2026/Lab 5/src/alu.sv}
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} {C:/Users/ramee/Documents/CA_2026/Lab 5/sim/mycpu_tb.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/ramee/Documents/CA_2026/Lab 5/sim/mycpu_tb.sv}
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module cpu_tb
+
+Top level modules:
+	cpu_tb
+
+} {} {}} {C:/Users/ramee/Documents/CA_2026/Lab 5/src/imm_gen.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/ramee/Documents/CA_2026/Lab 5/src/imm_gen.sv}
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module imm_gen
+
+Top level modules:
+	imm_gen
+
+} {} {}} {C:/Users/ramee/Documents/CA_2026/Lab 5/src/reg_file.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/ramee/Documents/CA_2026/Lab 5/src/reg_file.sv}
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module reg_file
+
+Top level modules:
+	reg_file
+
+} {} {}} {C:/Users/ramee/Documents/CA_2026/Lab 5/src/alu_controller.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/ramee/Documents/CA_2026/Lab 5/src/alu_controller.sv}
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module alu_controller
+
+Top level modules:
+	alu_controller
+
+} {} {}} {C:/Users/ramee/Documents/CA_2026/Lab 5/src/riscv_cpu.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/ramee/Documents/CA_2026/Lab 5/src/riscv_cpu.sv}
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module riscv_cpu
+
+Top level modules:
+	riscv_cpu
+
+} {} {}} {C:/Users/ramee/Documents/CA_2026/Lab 5/sim/opcode.vh} {1 {vlog -work work -vopt -stats=none {C:/Users/ramee/Documents/CA_2026/Lab 5/sim/opcode.vh}
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+
+} {} {}} {C:/Users/ramee/Documents/CA_2026/Lab 5/src/ASYNC_RAM_1W2R.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/ramee/Documents/CA_2026/Lab 5/src/ASYNC_RAM_1W2R.sv}
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module ASYNC_RAM_1W2R
+
+Top level modules:
+	ASYNC_RAM_1W2R
+
+} {} {}} {C:/Users/ramee/Documents/CA_2026/Lab 5/src/mem_path.vh} {1 {vlog -work work -vopt -stats=none {C:/Users/ramee/Documents/CA_2026/Lab 5/src/mem_path.vh}
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+
+} {} {}} {C:/Users/ramee/Documents/CA_2026/Lab 5/src/dmem.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/ramee/Documents/CA_2026/Lab 5/src/dmem.sv}
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+-- Compiling module dmem
+
+Top level modules:
+	dmem
+
+} {} {}}
