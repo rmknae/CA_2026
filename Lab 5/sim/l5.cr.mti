@@ -1,19 +1,12 @@
 {C:/Users/ramee/Documents/CA_2026/Lab 5/src/opcode.vh} {1 {vlog -work work -vopt -stats=none {C:/Users/ramee/Documents/CA_2026/Lab 5/src/opcode.vh}
 QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
 
-} {} {}} {C:/Users/ramee/Documents/CA_2026/Lab 5/src/imem.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/ramee/Documents/CA_2026/Lab 5/src/imem.sv}
+} {} {}} {C:/Users/ramee/Documents/CA_2026/Lab 5/src/imem.sv} {1 {vlog -work work -vopt -sv -stats=none {C:\Users\ramee\Documents\CA_2026\Lab 5\src\imem.sv}
 QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
 -- Compiling module imem
 
 Top level modules:
 	imem
-
-} {} {}} {C:/Users/ramee/Documents/CA_2026/Lab 5/src/main_controller.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/ramee/Documents/CA_2026/Lab 5/src/main_controller.sv}
-QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
--- Compiling module main_controller
-
-Top level modules:
-	main_controller
 
 } {} {}} {C:/Users/ramee/Documents/CA_2026/Lab 5/sim/mem_path.vh} {1 {vlog -work work -vopt -stats=none {C:/Users/ramee/Documents/CA_2026/Lab 5/sim/mem_path.vh}
 QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
@@ -60,6 +53,9 @@ QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
 Top level modules:
 	riscv_cpu
 
+} {} {}} {C:/Users/ramee/Documents/CA_2026/Lab 5/src/mem_path.vh} {1 {vlog -work work -vopt -stats=none {C:/Users/ramee/Documents/CA_2026/Lab 5/src/mem_path.vh}
+QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
+
 } {} {}} {C:/Users/ramee/Documents/CA_2026/Lab 5/sim/opcode.vh} {1 {vlog -work work -vopt -stats=none {C:/Users/ramee/Documents/CA_2026/Lab 5/sim/opcode.vh}
 QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
 
@@ -69,9 +65,6 @@ QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
 
 Top level modules:
 	ASYNC_RAM_1W2R
-
-} {} {}} {C:/Users/ramee/Documents/CA_2026/Lab 5/src/mem_path.vh} {1 {vlog -work work -vopt -stats=none {C:/Users/ramee/Documents/CA_2026/Lab 5/src/mem_path.vh}
-QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024
 
 } {} {}} {C:/Users/ramee/Documents/CA_2026/Lab 5/src/dmem.sv} {1 {vlog -work work -vopt -sv -stats=none {C:/Users/ramee/Documents/CA_2026/Lab 5/src/dmem.sv}
 QuestaSim-64 vlog 2024.1 Compiler 2024.02 Feb  1 2024

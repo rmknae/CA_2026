@@ -1,9 +1,9 @@
 BEGIN 1:reg_file:fast:work
     Registers :  1:cpu_tb:fast:work
 END 
-BEGIN 1:dmem:fast:work
+BEGIN 1:imem:fast:work
     memory :  1:cpu_tb:fast:work
 END 
-BEGIN 1:imem:fast:work
+BEGIN 1:dmem:fast:work
     memory :  1:cpu_tb:fast:work
 END 

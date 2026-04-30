@@ -42,6 +42,7 @@ module alu
     localparam ALU_PASS = 4'b1010;  // Pass operand2 (for LUI)
 
     always_comb begin
+
         case (alu_operation)
             ALU_AND  : result = operand1 & operand2;
             ALU_OR   : result = operand1 | operand2;
@@ -56,9 +57,10 @@ module alu
             ALU_PASS : result = operand2;
             default  : result = 32'b0;
         endcase
-    end
 
-    // Zero flag: used for branch instructions (result == 0 means equal for BEQ)
-    assign zero = (result == 32'b0);
+        // Zero flag
+        zero = (result == 32'b0);
+
+    end
 
 endmodule

@@ -26,7 +26,6 @@ module reg_file
     output logic [31:0] rd2     // Read data 2
 );
 
-    // Register array - named 'Registers' for testbench path compatibility
     (* ram_style = "distributed" *) reg [31:0] Registers [0:31];
 
     integer i;
@@ -41,8 +40,10 @@ module reg_file
             Registers[rd] <= wd;
     end
 
-    // Asynchronous reads - reading x0 always returns 0
-    assign rd1 = (rs1 == 5'b0) ? 32'b0 : Registers[rs1];
-    assign rd2 = (rs2 == 5'b0) ? 32'b0 : Registers[rs2];
+    // Combinational reads (asynchronous behavior)
+    always_comb begin
+        rd1 = (rs1 == 5'b0) ? 32'b0 : Registers[rs1];
+        rd2 = (rs2 == 5'b0) ? 32'b0 : Registers[rs2];
+    end
 
 endmodule

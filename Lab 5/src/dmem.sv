@@ -4,7 +4,7 @@
  * - Word-addressed: address is used directly as word index
  * - Synchronous write, asynchronous read
  * - The ALU result is the word address (no byte-to-word conversion needed
- *   because testbench initializes DMEM as: memory[reg_val + imm] = data)
+ * because testbench initializes DMEM as: memory[reg_val + imm] = data)
  */
 
 module dmem
@@ -13,11 +13,11 @@ module dmem
     parameter DEPTH  = (1 << AWIDTH)
 )
 (
-    input  logic        clk,
-    input  logic [31:0] addr,      // Word address (ALU result)
-    input  logic [31:0] wd,        // Write data
-    input  logic        we,        // Write enable
-    input  logic        re,        // Read enable
+    input logic clk,
+    input logic [31:0] addr,      // Word address (ALU result)
+    input logic [31:0] wd,        // Write data
+    input logic we,        // Write enable
+    input logic re,        // Read enable
     output logic [31:0] rd         // Read data
 );
 
@@ -36,6 +36,8 @@ module dmem
     end
 
     // Asynchronous read
-    assign rd = memory[addr[AWIDTH-1:0]];
+    always_comb begin
+        rd = memory[addr[AWIDTH-1:0]];
+    end
 
 endmodule
